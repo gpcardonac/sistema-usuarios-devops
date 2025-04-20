@@ -17,10 +17,6 @@ public class UsuarioServiceTest {
     private UsuarioRepository usuarioRepository;
     private UsuarioServiceImpl usuarioService;
 
-    @Test
-    @Disabled("Deshabilitado temporalmente para evitar fallos de conexión en GitHub Actions")
-    void contextLoads() {
-    }
     @BeforeEach
     void setUp() {
         usuarioRepository = mock(UsuarioRepository.class);
