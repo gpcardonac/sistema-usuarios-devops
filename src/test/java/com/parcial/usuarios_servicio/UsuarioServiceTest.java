@@ -4,6 +4,7 @@ import com.parcial.usuarios_servicio.entity.Usuario;
 import com.parcial.usuarios_servicio.repository.UsuarioRepository;
 import com.parcial.usuarios_servicio.service.imp.UsuarioServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.util.Optional;
@@ -16,6 +17,10 @@ public class UsuarioServiceTest {
     private UsuarioRepository usuarioRepository;
     private UsuarioServiceImpl usuarioService;
 
+    @Test
+    @Disabled("Deshabilitado temporalmente para evitar fallos de conexión en GitHub Actions")
+    void contextLoads() {
+    }
     @BeforeEach
     void setUp() {
         usuarioRepository = mock(UsuarioRepository.class);
