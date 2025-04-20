@@ -23,6 +23,7 @@ public class UsuarioServiceTest {
         usuarioService = new UsuarioServiceImpl(usuarioRepository);
     }
 
+
     @Test
     void testExistePorCorreo_retornaTrueSiExiste() {
         String correo = "juan@example.com";
